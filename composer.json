@@ -1,8 +1,8 @@
 {
-    "name": "symfony/skeleton",
+    "name": "boilerplate/ddd",
     "type": "project",
     "license": "MIT",
-    "description": "A minimal Symfony project recommended to create bare bones applications",
+    "description": "A docker based boilerplate for Symfony DDD projects.",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
@@ -33,6 +33,15 @@
         "symfony/twig-bundle": "7.0.*",
         "symfony/validator": "7.0.*",
         "symfony/yaml": "7.0.*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.57",
+        "justinrainbow/json-schema": "^5.2",
+        "phpstan/phpstan": "^1.11",
+        "qossmic/deptrac-shim": "^1.0",
+        "symfony/stopwatch": "7.0.*",
+        "symfony/web-profiler-bundle": "7.0.*",
+        "vimeo/psalm": "^5.24"
     },
     "config": {
         "allow-plugins": {
@@ -83,14 +92,5 @@
             "require": "7.0.*",
             "docker": true
         }
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.57",
-        "justinrainbow/json-schema": "^5.2",
-        "phpstan/phpstan": "^1.11",
-        "qossmic/deptrac-shim": "^1.0",
-        "symfony/stopwatch": "7.0.*",
-        "symfony/web-profiler-bundle": "7.0.*",
-        "vimeo/psalm": "^5.24"
     }
 }
