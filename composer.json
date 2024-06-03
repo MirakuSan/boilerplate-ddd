@@ -40,7 +40,7 @@
         "phpstan/phpstan": "^1.11",
         "qossmic/deptrac-shim": "^1.0",
         "symfony/stopwatch": "7.0.*",
-        "symfony/web-profiler-bundle": "7.0.*",
+        "symfony/web-profiler-bundle": "7.1.*",
         "vimeo/psalm": "^5.24"
     },
     "config": {
