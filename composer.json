@@ -36,7 +36,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.57",
-        "justinrainbow/json-schema": "^5.2",
+        "justinrainbow/json-schema": "^6.0",
         "phpstan/phpstan": "^1.11",
         "qossmic/deptrac-shim": "^1.0",
         "symfony/stopwatch": "7.1.*",
