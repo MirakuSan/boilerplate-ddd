@@ -12,8 +12,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  tests:
-    name: Tests
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       -
@@ -37,14 +37,29 @@ jobs:
             *.cache-to=type=gha,scope=${{github.ref}},mode=max
       -
         name: Start services
-        run: docker compose up --wait --no-build
+        run: make up
+      #      -
+      #        name: Check HTTP reachability
+      #        run: curl -v --fail-with-body http://localhost:81
+#      -
+#        name: Check HTTPS reachability
+#        run: curl -vk --fail-with-body https://localhost:81
       -
-        name: Check HTTP reachability
-        run: curl -v --fail-with-body http://localhost
+        name: Create test database
+        if: false # Remove this line if Doctrine ORM is
+        run: docker compose exec -T php bin/console -e test doctrine:database:create
       -
-        name: Check HTTPS reachability
-        if: false # Remove this line when the homepage will be configured, or change the path to check
-        run: curl -vk --fail-with-body https://localhost
+        name: Run migrations
+        if: false # Remove this line if Doctrine Migrations is installed
+        run: docker compose exec -T php bin/console -e test doctrine:migrations:migrate --no-interaction
+      -
+        name: Run PHPUnit
+        if: false # Remove this line if PHPUnit is installed
+        run: docker compose exec -T php bin/phpunit
+      -
+        name: Doctrine Schema Validator
+        if: false # Remove this line if Doctrine ORM is installed
+        run: docker compose exec -T php bin/console -e test doctrine:schema:validate
         
   lint:
     name: Docker Lint

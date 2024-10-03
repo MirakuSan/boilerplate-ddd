@@ -5,16 +5,17 @@
 
 version: 2
 updates:
-  - package-ecosystem: "composer" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    open-pull-requests-limit: 10
-    schedule:
-      interval: "weekly"
-    groups:
-      dev-dependencies:
-          applies-to: version-updates
-          patterns:
-              - "*"
-          update-types:
-              - "minor"
-              - "patch"
+    - package-ecosystem: "composer"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      open-pull-requests-limit: 10
+      labels:
+          - "dependencies"
+          - "automated"
+      ignore:
+          - dependency-name: "*"
+            update-types: ["version-update:semver-major"]
+      commit-message:
+          prefix: "[deps]"
+      rebase-strategy: "auto"
