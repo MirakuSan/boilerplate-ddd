@@ -530,16 +530,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.12.0",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "5418e811a14724068e95e0ba43353b903ada530f"
+                "reference": "ca59d84b8e63143ce1aed90cdb333ba329d71563"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/5418e811a14724068e95e0ba43353b903ada530f",
-                "reference": "5418e811a14724068e95e0ba43353b903ada530f",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/ca59d84b8e63143ce1aed90cdb333ba329d71563",
+                "reference": "ca59d84b8e63143ce1aed90cdb333ba329d71563",
                 "shasum": ""
             },
             "require": {
@@ -630,7 +630,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.12.0"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.13.0"
             },
             "funding": [
                 {
@@ -646,7 +646,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-19T07:20:37+00:00"
+            "time": "2024-09-01T09:46:40+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -1167,16 +1167,16 @@
         },
         {
             "name": "doctrine/sql-formatter",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/sql-formatter.git",
-                "reference": "d1ac84aef745c69ea034929eb6d65a6908b675cc"
+                "reference": "16ca9e39877369d664f06dacde468548298bdc40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/d1ac84aef745c69ea034929eb6d65a6908b675cc",
-                "reference": "d1ac84aef745c69ea034929eb6d65a6908b675cc",
+                "url": "https://api.github.com/repos/doctrine/sql-formatter/zipball/16ca9e39877369d664f06dacde468548298bdc40",
+                "reference": "16ca9e39877369d664f06dacde468548298bdc40",
                 "shasum": ""
             },
             "require": {
@@ -1184,6 +1184,7 @@
             },
             "require-dev": {
                 "doctrine/coding-standard": "^12",
+                "ergebnis/phpunit-slow-test-detector": "^2.14",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^10.5",
                 "vimeo/psalm": "^5.24"
@@ -1216,9 +1217,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/sql-formatter/issues",
-                "source": "https://github.com/doctrine/sql-formatter/tree/1.4.0"
+                "source": "https://github.com/doctrine/sql-formatter/tree/1.5.0"
             },
-            "time": "2024-05-08T08:12:09+00:00"
+            "time": "2024-09-11T07:29:40+00:00"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -2569,22 +2570,23 @@
         },
         {
             "name": "symfony/doctrine-bridge",
-            "version": "v7.0.7",
+            "version": "v7.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/doctrine-bridge.git",
-                "reference": "da605530d1a75162359d494efc00f767f7fcd68a"
+                "reference": "2568d0adaa5b0018b07beaa90363b880a43cc957"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/doctrine-bridge/zipball/da605530d1a75162359d494efc00f767f7fcd68a",
-                "reference": "da605530d1a75162359d494efc00f767f7fcd68a",
+                "url": "https://api.github.com/repos/symfony/doctrine-bridge/zipball/2568d0adaa5b0018b07beaa90363b880a43cc957",
+                "reference": "2568d0adaa5b0018b07beaa90363b880a43cc957",
                 "shasum": ""
             },
             "require": {
                 "doctrine/event-manager": "^2",
                 "doctrine/persistence": "^3.1",
                 "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/service-contracts": "^2.5|^3"
@@ -2625,6 +2627,7 @@
                 "symfony/security-core": "^6.4|^7.0",
                 "symfony/stopwatch": "^6.4|^7.0",
                 "symfony/translation": "^6.4|^7.0",
+                "symfony/type-info": "^7.1",
                 "symfony/uid": "^6.4|^7.0",
                 "symfony/validator": "^6.4|^7.0",
                 "symfony/var-dumper": "^6.4|^7.0"
@@ -2655,7 +2658,7 @@
             "description": "Provides integration for Doctrine with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/doctrine-bridge/tree/v7.0.7"
+                "source": "https://github.com/symfony/doctrine-bridge/tree/v7.1.5"
             },
             "funding": [
                 {
@@ -2671,7 +2674,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-28T11:44:19+00:00"
+            "time": "2024-09-08T12:32:26+00:00"
         },
         {
             "name": "symfony/dotenv",
